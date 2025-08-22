@@ -1,0 +1,112 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import FAQ from '../components/blocks/FAQ/Basic.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Data
+import creypassFeaturesData from '../data/json-files/creypassFeaturesData.json'
+// - Feature Categories
+const featuresFinanciamiento = creypassFeaturesData.filter((feature) => feature.category === 'Financiamiento')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'CREYPASS | Financiamiento Directo para Remodelación',
+	description:
+		'Financiamiento directo para remodelación sin bancos. Tasa fija 7.9% anual, pagos hasta 60 meses, aprobación en 48 horas. Transforma tu espacio sin afectar tu economía.'
+}
+// - Page Header
+const header = {
+	title: 'Financiamiento <strong>directo</strong> sin complicaciones',
+	text: 'Planes de pago flexibles para que transformes tu espacio sin afectar tu economía inmediata.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	
+	<!-- Sección de beneficios del financiamiento -->
+	<section class="py-16 bg-white dark:bg-neutral-900">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center mb-12">
+				<h2 class="text-3xl font-bold mb-4">¿Por qué elegir nuestro <strong>financiamiento</strong>?</h2>
+				<p class="text-lg text-neutral-600 dark:text-neutral-300">
+					Ofrecemos la mejor alternativa al financiamiento tradicional con condiciones transparentes y proceso simplificado.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="text-center">
+					<div class="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
+						<span class="text-primary-600 dark:text-primary-400 text-2xl font-bold">7.9%</span>
+					</div>
+					<h3 class="text-xl font-semibold mb-2">Tasa Fija Competitiva</h3>
+					<p class="text-neutral-600 dark:text-neutral-300">Tasa fija del 7.9% anual sin cambios durante todo el plazo del financiamiento.</p>
+				</div>
+				
+				<div class="text-center">
+					<div class="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
+						<span class="text-primary-600 dark:text-primary-400 text-2xl font-bold">48h</span>
+					</div>
+					<h3 class="text-xl font-semibold mb-2">Aprobación Rápida</h3>
+					<p class="text-neutral-600 dark:text-neutral-300">Respuesta en menos de 48 horas con validación por referencias personales o laborales.</p>
+				</div>
+				
+				<div class="text-center">
+					<div class="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center">
+						<span class="text-primary-600 dark:text-primary-400 text-2xl font-bold">60</span>
+					</div>
+					<h3 class="text-xl font-semibold mb-2">Hasta 60 Meses</h3>
+					<p class="text-neutral-600 dark:text-neutral-300">Pagos flexibles hasta 60 meses para que puedas pagar cómodamente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<Feature
+		title="Ventajas del Financiamiento CREYPASS"
+		text="Disfruta de todas las ventajas de nuestro financiamiento directo diseñado especialmente para proyectos de remodelación."
+		data={featuresFinanciamiento}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	
+	<!-- Proceso de financiamiento -->
+	<section class="py-16">
+		<div class="container mx-auto px-4">
+			<div class="max-w-4xl mx-auto text-center mb-12">
+				<h2 class="text-3xl font-bold mb-4">Proceso <strong>simple</strong> en 3 pasos</h2>
+				<p class="text-lg text-neutral-600 dark:text-neutral-300">
+					Obtén tu financiamiento de manera rápida y sencilla
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="text-center">
+					<div class="w-12 h-12 mx-auto mb-4 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+					<h3 class="text-xl font-semibold mb-2">Solicita tu Cotización</h3>
+					<p class="text-neutral-600 dark:text-neutral-300">Contáctanos y cuéntanos sobre tu proyecto. Te proporcionaremos una cotización detallada.</p>
+				</div>
+				
+				<div class="text-center">
+					<div class="w-12 h-12 mx-auto mb-4 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+					<h3 class="text-xl font-semibold mb-2">Evaluación Rápida</h3>
+					<p class="text-neutral-600 dark:text-neutral-300">Evaluamos tu solicitud con referencias personales o laborales. Respuesta en 48 horas.</p>
+				</div>
+				
+				<div class="text-center">
+					<div class="w-12 h-12 mx-auto mb-4 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+					<h3 class="text-xl font-semibold mb-2">¡Inicia tu Proyecto!</h3>
+					<p class="text-neutral-600 dark:text-neutral-300">Una vez aprobado, comenzamos tu proyecto de remodelación de inmediato.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
+	<CTA />
+</Layout>

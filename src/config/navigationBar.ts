@@ -34,24 +34,23 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'CREYPASS - Remodelación y Financiamiento',
+		text: 'CREYPASS'
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-		{ name: 'Features', link: '/features' },
+		{ name: 'Inicio', link: '/' },
+		{ name: 'Servicios', link: '/servicios' },
+		{ name: 'Financiamiento', link: '/financiamiento' },
 		{
-			name: 'Resources',
+			name: 'Nosotros',
 			link: '#',
 			submenu: [
-				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
-				{ name: 'FAQ', link: '/faq' },
-				{ name: 'Terms', link: '/terms' }
+				{ name: 'Quiénes Somos', link: '/nosotros' },
+				{ name: 'Nuestros Valores', link: '/valores' },
+				{ name: 'FAQ', link: '/faq' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Contacto', link: '/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Cotizar Proyecto', link: '/contact', style: 'primary', size: 'lg' }]
 }

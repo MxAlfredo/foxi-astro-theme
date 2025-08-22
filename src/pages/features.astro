@@ -5,59 +5,53 @@ import Layout from '../layouts/Layout.astro'
 // - UI
 import Feature from '../components/blocks/features/FeatureSticky.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
+import CTA from '../components/blocks/CTA/BasicLight.astro'
 
 // Data
-import featuresData from '../data/json-files/featuresData.json'
+import featuresData from '../data/json-files/creypassFeaturesData.json'
 // - Feature Categories
-const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
-const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
-const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
-const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
-const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+const featuresResidencial = featuresData.filter((feature) => feature.category === 'Residencial')
+const featuresComercial = featuresData.filter((feature) => feature.category === 'Comercial')
+const featuresFinanciamiento = featuresData.filter((feature) => feature.category === 'Financiamiento')
+const featuresServicio = featuresData.filter((feature) => feature.category === 'Servicio')
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Foxi | Features to Boost Productivity & Security',
+	title: 'CREYPASS | Características y Servicios de Remodelación',
 	description:
-		"Explore Foxi's powerful features designed to enhance productivity, ensure top-notch security, and integrate seamlessly with your favorite tools. Join thousands of satisfied users and transform your workflow with Foxi today!"
+		"Descubre las características distintivas de CREYPASS: servicios de remodelación residencial y comercial con financiamiento directo. Conoce por qué somos la mejor opción para tu proyecto."
 }
 // - Page Header
 const header = {
-	title: 'Why you and your team will <strong>love</strong> foxi.',
-	text: 'Streamline your tasks, protect your data, and enjoy working with our tools!'
+	title: 'Por qué elegir <strong>CREYPASS</strong> para tu proyecto.',
+	text: 'Servicios integrales de remodelación con financiamiento directo y garantía de calidad.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero title={header.title} text={header.text} />
 	<Feature
-		title="Insightful Analytics"
-		text="Delve into your data with precision and uncover actionable insights."
-		data={featuresAnalytics}
+		title="Remodelación Residencial"
+		text="Servicios completos para transformar tu hogar con los más altos estándares de calidad."
+		data={featuresResidencial}
 	/>
 	<Feature
-		title="Efficiency Unleashed"
-		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
-		data={featuresSecurity}
+		title="Proyectos Comerciales"
+		text="Especialistas en remodelación de espacios comerciales con diseño funcional y profesional."
+		data={featuresComercial}
 		classes="bg-neutral-50 dark:bg-neutral-900"
 	/>
 	<Feature
-		title="Ultimate Data Protection"
-		text="Keep your data safe with top-notch security measures and real-time threat detection."
-		data={featuresProductivity}
+		title="Financiamiento Directo"
+		text="Opciones de financiamiento flexible con tasas preferenciales y aprobación rápida."
+		data={featuresFinanciamiento}
 	/>
 	<Feature
-		title="Seamless Connectivity"
-		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
-		data={featuresIntegrations}
+		title="Servicio Integral"
+		text="Acompañamiento completo desde el diseño hasta la entrega final de tu proyecto."
+		data={featuresServicio}
 		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="24/7 Expert Help"
-		text="Our friendly support team is always here to assist you with any questions or issues."
-		data={featuresSupport}
 	/>
 	<CTA />
 </Layout>

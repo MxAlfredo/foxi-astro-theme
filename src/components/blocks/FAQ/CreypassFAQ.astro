@@ -1,0 +1,76 @@
+---
+// CREYPASS FAQ section
+// ------------
+// Description: FAQ específico para servicios de CREYPASS
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Accordion from '../../ui/Accordion.astro'
+import Card from '../../ui/cards/partials/Card.astro'
+
+// Props
+type Props = {
+	classes?: string
+}
+const { classes } = Astro.props
+---
+
+<Section id="FAQ" classes={classes}>
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">
+				Preguntas <strong>frecuentes</strong> sobre nuestros servicios
+			</h2>
+			<p class="text-lg leading-relaxed">
+				¿Tienes dudas sobre nuestros servicios de remodelación y financiamiento? Aquí resolvemos las preguntas más comunes de nuestros clientes.
+			</p>
+		</Col>
+		<Col span="2" />
+		<Col span="8">
+			<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">
+				<Accordion
+					title="¿Cómo funciona el financiamiento directo?"
+					text="Nuestro financiamiento es directo, sin intermediarios bancarios. Ofrecemos una tasa fija del 7.9% anual con pagos flexibles hasta 60 meses. La aprobación se basa en referencias personales o laborales y obtienes respuesta en menos de 48 horas."
+				/>
+				<Accordion
+					title="¿Qué incluye el servicio de remodelación?"
+					text="Ofrecemos servicios integrales que incluyen diseño personalizado, materiales de primera calidad, mano de obra especializada, y seguimiento completo del proyecto. Cubrimos desde cocinas y baños hasta espacios comerciales completos."
+				/>
+				<Accordion
+					title="¿Puedo financiar cualquier tipo de proyecto?"
+					text="Sí, nuestro financiamiento aplica tanto para proyectos de remodelación residencial como comercial. También financiamos la compra de mobiliario y hasta vehículos, siempre con las mismas condiciones favorables."
+				/>
+				<Accordion
+					title="¿Qué documentos necesito para el financiamiento?"
+					text="Solo necesitas identificación oficial y referencias personales o laborales. No requerimos comprobantes de ingresos tradicionales como los bancos. Nuestro proceso de validación es más ágil y accesible."
+				/>
+				<Accordion
+					title="¿Ofrecen garantía en sus trabajos?"
+					text="Absolutamente. Garantizamos la calidad de todos nuestros trabajos tanto en materiales como en mano de obra. Nuestro compromiso con la excelencia incluye soporte post-entrega para tu total tranquilidad."
+				/>
+				<Accordion
+					title="¿Cuánto tiempo toma completar un proyecto?"
+					text="El tiempo varía según la complejidad del proyecto. Una cocina integral puede tomar 3-4 semanas, mientras que una remodelación completa puede llevar 6-8 semanas. Te proporcionamos un cronograma detallado desde el inicio."
+				/>
+				<Accordion
+					title="¿Trabajan en toda la República Mexicana?"
+					text="Actualmente estamos expandiendo nuestra cobertura. Contáctanos para verificar si damos servicio en tu zona. Nuestro objetivo es llevar nuestros servicios a todo México."
+				/>
+			</Card>
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-3xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+</style>

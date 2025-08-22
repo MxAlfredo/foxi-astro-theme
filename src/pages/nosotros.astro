@@ -1,0 +1,138 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'CREYPASS | Quiénes Somos - Experiencia en Remodelación',
+	description:
+		'Conoce la historia de CREYPASS, nuestra misión, visión y valores. Años de experiencia en remodelación y financiamiento de bienes muebles e inmuebles.'
+}
+// - Page Header
+const header = {
+	title: 'Conoce a <strong>CREYPASS</strong>',
+	text: 'Años de experiencia transformando espacios con calidad, compromiso y excelencia.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	
+	<!-- Introducción -->
+	<Section classes="bg-white dark:bg-neutral-900">
+		<Row>
+			<Col span="2" />
+			<Col span="8">
+				<div class="prose prose-lg dark:prose-invert max-w-none">
+					<h2>Nuestra Historia</h2>
+					<p class="text-lg leading-relaxed">
+						<strong>CREYPASS</strong> nace de la experiencia en la adjudicación de diversidad de bienes muebles e inmuebles y sus derivados 
+						adquirida a lo largo de los años, ahora consolidada como una garantía en la excelencia.
+					</p>
+					<p class="text-lg leading-relaxed">
+						Por su enfoque integral, el cual incluye además de la compra, venta y/o renta, también la remodelación, adquisición, 
+						administración y financiamiento directo de aquellos mencionados.
+					</p>
+					<p class="text-lg leading-relaxed">
+						Otorgando una completa seriedad y compromiso con el cliente, atendemos y asesoramos durante el camino de este 
+						maravilloso proceso en la adquisición, venta y manejo de bienes muebles e inmuebles.
+					</p>
+				</div>
+			</Col>
+			<Col span="2" />
+		</Row>
+	</Section>
+
+	<!-- Misión, Visión y Objetivo -->
+	<Section classes="bg-neutral-50 dark:bg-neutral-900/50">
+		<Row>
+			<Col span="12" align="center" classes="mb-12">
+				<h2 class="text-3xl font-bold">Nuestro <strong>Propósito</strong></h2>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="4">
+				<div class="bg-white dark:bg-neutral-800 p-8 rounded-lg shadow-lg h-full">
+					<h3 class="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4" id="mision">Misión</h3>
+					<p class="text-lg leading-relaxed">
+						Ofrecer servicios accesibles de financiamiento y remodelación de interiores, combinando diseño, 
+						funcionalidad y flexibilidad financiera para transformar espacios con estilo y calidad.
+					</p>
+				</div>
+			</Col>
+			<Col span="4">
+				<div class="bg-white dark:bg-neutral-800 p-8 rounded-lg shadow-lg h-full">
+					<h3 class="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4">Visión</h3>
+					<p class="text-lg leading-relaxed">
+						Convertirnos en la empresa de referencia en México en remodelaciones financiadas, siendo reconocidos 
+						por nuestra innovación, compromiso, y por facilitar el acceso a mejoras del hogar y negocios para 
+						todos los perfiles económicos.
+					</p>
+				</div>
+			</Col>
+			<Col span="4">
+				<div class="bg-white dark:bg-neutral-800 p-8 rounded-lg shadow-lg h-full">
+					<h3 class="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4">Objetivo</h3>
+					<p class="text-lg leading-relaxed">
+						Lanzar un programa de remodelación de interiores con planes de financiamiento accesibles, enfocado 
+						en hogares y pequeños negocios que buscan transformar sus espacios sin necesidad de pagar todo de inmediato.
+					</p>
+				</div>
+			</Col>
+		</Row>
+	</Section>
+
+	<!-- Propuesta de Negocio -->
+	<Section classes="bg-white dark:bg-neutral-900">
+		<Row>
+			<Col span="12" align="center" classes="mb-12">
+				<h2 class="text-3xl font-bold">Nuestra <strong>Propuesta</strong> de Negocio</h2>
+			</Col>
+		</Row>
+		<Row>
+			<Col span="2" />
+			<Col span="8">
+				<div class="space-y-8">
+					<div class="flex items-start space-x-4">
+						<div class="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+						<div>
+							<p class="text-lg leading-relaxed">
+								Nuestra <strong>magnificencia en el servicio</strong> y el amplio conocimiento en temas inmobiliarios 
+								y mobiliarios es lo que nos diferencia de la competencia.
+							</p>
+						</div>
+					</div>
+					<div class="flex items-start space-x-4">
+						<div class="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+						<div>
+							<p class="text-lg leading-relaxed">
+								Conocer cómo funciona el mercado en el intercambio de muebles, tal como el inmobiliario ha sido 
+								fundamental en el logro de nuestro <strong>éxito en la agencia</strong>.
+							</p>
+						</div>
+					</div>
+					<div class="flex items-start space-x-4">
+						<div class="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+						<div>
+							<p class="text-lg leading-relaxed">
+								Y como un pilar importantísimo, contamos con <strong>buenos agentes profesionales</strong> como 
+								personal altamente capacitado en el desarrollo de negocios.
+							</p>
+						</div>
+					</div>
+				</div>
+			</Col>
+			<Col span="2" />
+		</Row>
+	</Section>
+
+	<CTA />
+</Layout>

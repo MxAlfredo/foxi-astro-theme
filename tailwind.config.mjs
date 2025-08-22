@@ -33,17 +33,30 @@ export default {
       colors: {
         transparent: "transparent",
         primary: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
-          400: "#f472b6",
-          500: "#E2187D",
-          600: "#db2777",
-          700: "#be185d",
-          800: "#9d174d",
-          900: "#831843",
-          950: "#500724",
+          50: "#f8f9fb",
+          100: "#f1f3f7",
+          200: "#e2e6ed",
+          300: "#cdd4e0",
+          400: "#a8b4c8",
+          500: "#3C3D5E", // Delft Blue - Color principal de CREYPASS
+          600: "#3E3F5F", // Delft Blue 2 - Variación
+          700: "#232340", // Space Cadet - Azul oscuro
+          800: "#1a1a2e",
+          900: "#151529",
+          950: "#0d0d1a",
+        },
+        secondary: {
+          50: "#faf9f8",
+          100: "#f5f3f1",
+          200: "#ebe7e3",
+          300: "#DCD3D1", // Timberwolf - Neutro claro
+          400: "#CFBAAD", // Pale Dogwood - Tono cálido
+          500: "#b8a195",
+          600: "#a08b7d",
+          700: "#857069",
+          800: "#6b5b56",
+          900: "#574b47",
+          950: "#2e2622",
         },
         neutral: {
           50: "#f8fafc",

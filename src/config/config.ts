@@ -21,13 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'CREYPASS - Remodelación y Financiamiento de Interiores',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'CREYPASS ofrece servicios de remodelación residencial y comercial con financiamiento directo. Transformamos espacios con diseño, calidad y planes de pago flexibles hasta 60 meses.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'CREYPASS logo'
 	},
 	canonical: true,
 	noindex: false,

@@ -1,0 +1,146 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'CREYPASS | Nuestros Valores - Profesionalismo y Calidad',
+	description:
+		'Los valores que guían a CREYPASS: Profesionalismo, Sostenibilidad y Calidad. Conoce los principios que definen nuestro compromiso con la excelencia.'
+}
+// - Page Header
+const header = {
+	title: 'Nuestros <strong>Valores</strong>',
+	text: 'Los principios que guían cada proyecto y definen nuestro compromiso con la excelencia.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	
+	<!-- Valores Principales -->
+	<Section classes="bg-white dark:bg-neutral-900">
+		<Row>
+			<Col span="12" align="center" classes="mb-16">
+				<h2 class="text-3xl font-bold">Los valores que nos <strong>definen</strong></h2>
+				<p class="text-lg text-neutral-600 dark:text-neutral-300 mt-4 max-w-3xl">
+					En CREYPASS, nuestros valores son la base de todo lo que hacemos. Guían nuestras decisiones, 
+					definen nuestra cultura y aseguran que cada cliente reciba el mejor servicio posible.
+				</p>
+			</Col>
+		</Row>
+		
+		<!-- Profesionalismo -->
+		<Row classes="mb-16">
+			<Col span="6" classes="order-2 lg:order-1">
+				<div class="lg:pr-8">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full mb-6">
+						<svg class="w-8 h-8 text-primary-600 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-primary-600 dark:text-primary-400 mb-4">Profesionalismo</h3>
+					<p class="text-lg leading-relaxed mb-4">
+						<strong>Dando un trabajo de calidad satisfaciendo las necesidades de nuestros clientes.</strong>
+					</p>
+					<p class="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+						Nuestro compromiso con la excelencia se refleja en cada detalle de nuestro trabajo. Desde la consulta inicial 
+						hasta la entrega final, mantenemos los más altos estándares profesionales para garantizar resultados excepcionales.
+					</p>
+				</div>
+			</Col>
+			<Col span="6" classes="order-1 lg:order-2 mb-8 lg:mb-0">
+				<div class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/20 rounded-lg p-8 h-full flex items-center justify-center">
+					<div class="text-center">
+						<div class="text-6xl font-bold text-primary-600 dark:text-primary-400 mb-2">100%</div>
+						<div class="text-lg text-primary-700 dark:text-primary-300">Compromiso con la Calidad</div>
+					</div>
+				</div>
+			</Col>
+		</Row>
+
+		<!-- Sostenibilidad -->
+		<Row classes="mb-16">
+			<Col span="6" classes="mb-8 lg:mb-0">
+				<div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg p-8 h-full flex items-center justify-center">
+					<div class="text-center">
+						<div class="text-6xl font-bold text-green-600 dark:text-green-400 mb-2">∞</div>
+						<div class="text-lg text-green-700 dark:text-green-300">Compromiso Duradero</div>
+					</div>
+				</div>
+			</Col>
+			<Col span="6">
+				<div class="lg:pl-8">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full mb-6">
+						<svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-green-600 dark:text-green-400 mb-4">Sostenibilidad</h3>
+					<p class="text-lg leading-relaxed mb-4">
+						<strong>COMPROMISO para alcanzar las metas a mediano, corto y largo plazo, de manera eficaz.</strong>
+					</p>
+					<p class="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+						Construimos relaciones duraderas basadas en la confianza y el cumplimiento. Nuestro enfoque sostenible 
+						garantiza que cada proyecto contribuya al crecimiento continuo tanto de nuestros clientes como de nuestra empresa.
+					</p>
+				</div>
+			</Col>
+		</Row>
+
+		<!-- Calidad -->
+		<Row>
+			<Col span="6" classes="order-2 lg:order-1">
+				<div class="lg:pr-8">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-amber-100 dark:bg-amber-900 rounded-full mb-6">
+						<svg class="w-8 h-8 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold text-amber-600 dark:text-amber-400 mb-4">Calidad</h3>
+					<p class="text-lg leading-relaxed mb-4">
+						<strong>MOTIVACIÓN sintiéndose conectado con la tarea, encontrando un propósito en ella.</strong>
+					</p>
+					<p class="text-neutral-600 dark:text-neutral-300 leading-relaxed">
+						La calidad es más que un estándar, es nuestra pasión. Cada miembro de nuestro equipo encuentra propósito 
+						en crear espacios excepcionales que superen las expectativas y transformen vidas.
+					</p>
+				</div>
+			</Col>
+			<Col span="6" classes="order-1 lg:order-2 mb-8 lg:mb-0">
+				<div class="bg-gradient-to-br from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20 rounded-lg p-8 h-full flex items-center justify-center">
+					<div class="text-center">
+						<div class="text-6xl font-bold text-amber-600 dark:text-amber-400 mb-2">★</div>
+						<div class="text-lg text-amber-700 dark:text-amber-300">Excelencia en cada Detalle</div>
+					</div>
+				</div>
+			</Col>
+		</Row>
+	</Section>
+
+	<!-- Resumen de Valores -->
+	<Section classes="bg-neutral-50 dark:bg-neutral-900/50">
+		<Row>
+			<Col span="12" align="center">
+				<div class="max-w-4xl mx-auto">
+					<h2 class="text-3xl font-bold mb-6">Valores que <strong>impulsan</strong> resultados</h2>
+					<p class="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
+						En CREYPASS, estos valores no son solo palabras en una pared. Son principios vivos que 
+						guían cada decisión, cada interacción y cada proyecto que emprendemos. Porque sabemos que 
+						transformar espacios es también transformar vidas, y esa responsabilidad la tomamos muy en serio.
+					</p>
+				</div>
+			</Col>
+		</Row>
+	</Section>
+
+	<CTA />
+</Layout>

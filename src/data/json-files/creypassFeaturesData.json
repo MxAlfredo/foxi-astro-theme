@@ -1,0 +1,110 @@
+[
+	{
+		"title": "Remodelación Residencial",
+		"icon": "computer-desktop",
+		"description": "Transformamos tu hogar con diseño personalizado: cocinas integrales, baños, recámaras, salas y comedores con estilo único.",
+		"category": "Residencial"
+	},
+	{
+		"title": "Diseño de Interiores",
+		"icon": "paint-brush",
+		"description": "Diseño personalizado moderno, minimalista e industrial. Creamos espacios que reflejan tu personalidad y estilo.",
+		"category": "Residencial"
+	},
+	{
+		"title": "Cocinas Integrales",
+		"icon": "squares-plus",
+		"description": "Cocinas funcionales y elegantes diseñadas a medida. Optimizamos el espacio y creamos el corazón perfecto para tu hogar.",
+		"category": "Residencial"
+	},
+	{
+		"title": "Cambio de Pisos",
+		"icon": "rectangle-stack",
+		"description": "Instalación profesional de pisos vinílicos, cerámicos, madera y porcelanato. Calidad y durabilidad garantizada.",
+		"category": "Residencial"
+	},
+	{
+		"title": "Iluminación Decorativa",
+		"icon": "light-bulb",
+		"description": "Iluminación funcional y decorativa que transforma ambientes. Creamos la atmósfera perfecta para cada espacio.",
+		"category": "Residencial"
+	},
+	{
+		"title": "Remodelación Comercial",
+		"icon": "computer-desktop",
+		"description": "Espacios comerciales y oficinas diseñados para optimizar productividad y crear experiencias únicas para clientes.",
+		"category": "Comercial"
+	},
+	{
+		"title": "Remodelación de Fachadas",
+		"icon": "computer-desktop",
+		"description": "Fachadas comerciales impactantes que atraen clientes y reflejan la identidad de tu marca.",
+		"category": "Comercial"
+	},
+	{
+		"title": "Branding de Interiores",
+		"icon": "paint-brush",
+		"description": "Integramos colores, logotipos y ambientación que fortalecen la identidad visual de tu negocio.",
+		"category": "Comercial"
+	},
+	{
+		"title": "Mobiliario Personalizado",
+		"icon": "cube-transparent",
+		"description": "Mobiliario comercial diseñado específicamente para tu negocio. Funcionalidad y estética en perfecta armonía.",
+		"category": "Comercial"
+	},
+	{
+		"title": "Optimización de Espacios",
+		"icon": "arrow-trending-up",
+		"description": "Maximizamos el potencial de tu espacio comercial para mejorar la experiencia del cliente y la productividad.",
+		"category": "Comercial"
+	},
+	{
+		"title": "Financiamiento Directo",
+		"icon": "credit-card",
+		"description": "Financiación sin intermediarios ni bancos. Tasa fija del 7.9% anual con aprobación rápida en menos de 48 horas.",
+		"category": "Financiamiento"
+	},
+	{
+		"title": "Pagos Flexibles",
+		"icon": "document-text",
+		"description": "Planes de pago flexibles hasta 60 meses. Transforma tu espacio sin afectar tu economía inmediata.",
+		"category": "Financiamiento"
+	},
+	{
+		"title": "Aprobación Rápida",
+		"icon": "rocket",
+		"description": "Validación por referencias personales o laborales. Respuesta en menos de 48 horas para que inicies tu proyecto pronto.",
+		"category": "Financiamiento"
+	},
+	{
+		"title": "Sin Intermediarios",
+		"icon": "shield-check",
+		"description": "Financiamiento directo sin bancos. Proceso simplificado y transparente con condiciones claras desde el inicio.",
+		"category": "Financiamiento"
+	},
+	{
+		"title": "Tasa Fija Competitiva",
+		"icon": "chart-pie",
+		"description": "Tasa fija del 7.9% anual sin sorpresas. Mantén control total de tu presupuesto durante todo el plazo.",
+		"category": "Financiamiento"
+	},
+	{
+		"title": "Asesoría Integral",
+		"icon": "user-group",
+		"description": "Te acompañamos en todo el proceso: desde el diseño inicial hasta la entrega final de tu proyecto.",
+		"category": "Servicio"
+	},
+	{
+		"title": "Garantía de Calidad",
+		"icon": "filled-star",
+		"description": "Materiales de primera calidad y mano de obra especializada. Tu satisfacción es nuestra prioridad.",
+		"category": "Servicio"
+	},
+	{
+		"title": "Experiencia Comprobada",
+		"icon": "trophy",
+		"description": "Años de experiencia en bienes muebles e inmuebles. Conocemos el mercado y las mejores prácticas.",
+		"category": "Servicio"
+	}
+]

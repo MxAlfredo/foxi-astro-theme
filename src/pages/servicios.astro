@@ -1,0 +1,57 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Data
+import creypassFeaturesData from '../data/json-files/creypassFeaturesData.json'
+// - Feature Categories
+const featuresResidencial = creypassFeaturesData.filter((feature) => feature.category === 'Residencial')
+const featuresComercial = creypassFeaturesData.filter((feature) => feature.category === 'Comercial')
+const featuresFinanciamiento = creypassFeaturesData.filter((feature) => feature.category === 'Financiamiento')
+const featuresServicio = creypassFeaturesData.filter((feature) => feature.category === 'Servicio')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'CREYPASS | Servicios de Remodelación y Financiamiento',
+	description:
+		'Servicios integrales de remodelación residencial y comercial con financiamiento directo. Diseño de interiores, cocinas, baños y espacios comerciales con planes flexibles.'
+}
+// - Page Header
+const header = {
+	title: 'Servicios que <strong>transforman</strong> espacios',
+	text: 'Remodelación integral con diseño, calidad y financiamiento flexible para hogares y negocios.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Feature
+		title="Remodelación Residencial"
+		text="Transformamos tu hogar con diseño personalizado y materiales de primera calidad."
+		data={featuresResidencial}
+	/>
+	<Feature
+		title="Remodelación Comercial"
+		text="Espacios comerciales diseñados para optimizar productividad y crear experiencias únicas."
+		data={featuresComercial}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="Financiamiento Directo"
+		text="Planes de pago flexibles sin intermediarios. Tasa fija 7.9% anual hasta 60 meses."
+		data={featuresFinanciamiento}
+	/>
+	<Feature
+		title="Nuestro Compromiso"
+		text="Asesoría integral y garantía de calidad en cada proyecto que realizamos."
+		data={featuresServicio}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<CTA />
+</Layout>

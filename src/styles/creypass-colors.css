@@ -1,0 +1,57 @@
+/* CREYPASS - Colores Corporativos */
+/* Basado en la paleta de colores oficial de la empresa */
+
+:root {
+  /* Colores principales CREYPASS */
+  --creypass-delft-blue: #3C3D5E;      /* Color principal */
+  --creypass-pale-dogwood: #CFBAAD;    /* Tono cálido */
+  --creypass-timberwolf: #DCD3D1;      /* Neutro claro */
+  --creypass-space-cadet: #232340;     /* Azul oscuro */
+  --creypass-delft-blue-2: #3E3F5F;    /* Variación del principal */
+  
+  /* Variables para modo oscuro */
+  --creypass-primary: var(--creypass-delft-blue);
+  --creypass-primary-dark: var(--creypass-space-cadet);
+  --creypass-accent: var(--creypass-pale-dogwood);
+  --creypass-neutral: var(--creypass-timberwolf);
+  
+  /* Gradientes corporativos */
+  --creypass-gradient-primary: linear-gradient(135deg, var(--creypass-delft-blue), var(--creypass-delft-blue-2));
+  --creypass-gradient-accent: linear-gradient(135deg, var(--creypass-pale-dogwood), var(--creypass-timberwolf));
+}
+
+/* Modo oscuro */
+.dark {
+  --creypass-primary: var(--creypass-delft-blue-2);
+  --creypass-primary-dark: var(--creypass-space-cadet);
+}
+
+/* Clases de utilidad personalizadas */
+.bg-creypass-primary {
+  background-color: var(--creypass-primary);
+}
+
+.text-creypass-primary {
+  color: var(--creypass-primary);
+}
+
+.border-creypass-primary {
+  border-color: var(--creypass-primary);
+}
+
+.bg-creypass-gradient {
+  background: var(--creypass-gradient-primary);
+}
+
+.bg-creypass-accent-gradient {
+  background: var(--creypass-gradient-accent);
+}
+
+/* Hover states */
+.hover-creypass-primary:hover {
+  background-color: var(--creypass-primary-dark);
+}
+
+.hover-creypass-accent:hover {
+  background-color: var(--creypass-pale-dogwood);
+}

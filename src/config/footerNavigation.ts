@@ -35,77 +35,73 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'CREYPASS',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Transformamos espacios con diseño, funcionalidad y financiamiento flexible. Remodelación residencial y comercial con planes de pago accesibles hasta 60 meses.',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'CREYPASS - Remodelación y Financiamiento',
+			text: 'CREYPASS'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'Servicios',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Remodelación Residencial',
+					subCategoryLink: '/servicios#residencial'
+				},
+				{
+					subCategory: 'Remodelación Comercial',
+					subCategoryLink: '/servicios#comercial'
+				},
+				{
+					subCategory: 'Financiamiento',
+					subCategoryLink: '/financiamiento'
 				},
 				{
 					subCategory: 'FAQ',
 					subCategoryLink: '/faq'
-				},
-				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
 				}
 			]
 		},
 		{
-			category: 'About us',
+			category: 'Nosotros',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategory: 'Quiénes Somos',
+					subCategoryLink: '/nosotros'
 				},
 				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategory: 'Nuestros Valores',
+					subCategoryLink: '/valores'
 				},
 				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategory: 'Misión y Visión',
+					subCategoryLink: '/nosotros#mision'
 				}
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Contacto',
 			subCategories: [
 				{
-					subCategory: 'Contact',
+					subCategory: 'Contacto',
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Support',
+					subCategory: 'Cotizar Proyecto',
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Join us',
+					subCategory: 'Soporte',
 					subCategoryLink: '/contact'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© CREYPASS 2024. Todos los derechos reservados.'
 	}
 }
