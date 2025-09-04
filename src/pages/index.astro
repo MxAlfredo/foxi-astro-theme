@@ -4,14 +4,20 @@
 import Layout from '../layouts/Layout.astro'
 // - UI
 import Hero from '../components/blocks/hero/HomeCTA.astro'
-import Features from '../components/blocks/features/FeatureCards.astro'
+import Features from '../components/blocks/features/FeatureCardsSimple.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
-import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
+import HighlightBlocks from '../components/blocks/highlights/HighlightsSimple.astro'
+import SocialProof from '../components/blocks/socialproof/Basic.astro'
 
 // Content
 // - Testimonial background
-import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import testimonialBackground from '../assets/testimonial-bg-02.webp'
+// - Testimonial data
+const testimonialData = {
+	blockquote: 'La remodelación de nuestra cocina con CREYPASS superó todas nuestras expectativas. El financiamiento directo nos permitió tener la cocina de nuestros sueños sin comprometer nuestros ahorros.',
+	figcaption: 'Carmen y Roberto Hernández',
+	cite: 'Remodelación integral, Colonia Roma Norte'
+}
 // - SEO
 const SEO = {
 	title: 'CREYPASS | Remodelación y Financiamiento de Interiores',
@@ -23,7 +29,12 @@ const SEO = {
 <Layout title={SEO.title} description={SEO.description}>
 	<Hero />
 	<Features />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
+	<Testimonial 
+		blockquote={testimonialData.blockquote}
+		figcaption={testimonialData.figcaption}
+		cite={testimonialData.cite}
+		bg={testimonialBackground} 
+		bgPosition="right" 
+	/>
 	<HighlightBlocks />
-	<CTA />
 </Layout>

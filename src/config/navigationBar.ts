@@ -33,7 +33,7 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
+		src: '/logo_creypass.svg',
 		alt: 'CREYPASS - Remodelación y Financiamiento',
 		text: 'CREYPASS'
 	},
@@ -49,8 +49,7 @@ export const navigationBarData: NavData = {
 				{ name: 'Nuestros Valores', link: '/valores' },
 				{ name: 'FAQ', link: '/faq' }
 			]
-		},
-		{ name: 'Contacto', link: '/contact' }
+		}
 	],
-	navActions: [{ name: 'Cotizar Proyecto', link: '/contact', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Cotizar Proyecto', link: 'https://wa.me/5217671173175?text=Hola%2C%20me%20interesa%20cotizar%20un%20proyecto%20de%20remodelaci%C3%B3n', style: 'primary', size: 'lg' }]
 }

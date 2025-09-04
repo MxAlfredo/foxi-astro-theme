@@ -1,0 +1,38 @@
+<svg width="480" height="600" viewBox="0 0 480 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_remodelacion)">
+    <g filter="url(#filter0_dd_remodelacion)">
+      <rect x="24" y="24" width="432" height="552" rx="24" fill="white"/>
+      
+      <!-- Casa principal -->
+      <path d="M120 200L240 120L360 200V400H120V200Z" fill="#3C3D5E" opacity="0.8"/>
+      <path d="M240 120L360 200H320L240 150L160 200H120L240 120Z" fill="#232340"/>
+      
+      <!-- Ventanas -->
+      <rect x="160" y="240" width="40" height="40" rx="4" fill="#CFBAAD"/>
+      <rect x="280" y="240" width="40" height="40" rx="4" fill="#CFBAAD"/>
+      
+      <!-- Puerta -->
+      <rect x="210" y="320" width="60" height="80" rx="8" fill="#DCD3D1"/>
+      <circle cx="250" cy="360" r="3" fill="#3C3D5E"/>
+      
+      <!-- Herramientas de remodelación -->
+      <path d="M140 450L160 430L170 440L150 460Z" fill="#3E3F5F" stroke="#232340" stroke-width="2"/>
+      <rect x="310" y="440" width="30" height="8" rx="4" fill="#3E3F5F"/>
+      <rect x="320" y="430" width="10" height="30" rx="2" fill="#CFBAAD"/>
+      
+      <!-- Elementos decorativos -->
+      <circle cx="100" cy="180" r="15" fill="#CFBAAD" opacity="0.6"/>
+      <circle cx="380" cy="190" r="12" fill="#DCD3D1" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <defs>
+    <filter id="filter0_dd_remodelacion" x="0" y="0" width="480" height="600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+    </filter>
+    <clipPath id="clip0_remodelacion">
+      <rect width="480" height="600" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

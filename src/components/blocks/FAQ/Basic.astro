@@ -1,69 +1,43 @@
 ---
-// Basic FAQ section
-// ------------
-// Description: A section that contains a list of frequently asked questions with answers.
-
-// Components
-// - Layout
-import Section from '../../ui/Section.astro'
-import Row from '../../ui/Row.astro'
-import Col from '../../ui/Col.astro'
-// - UI
-import Accordion from '../../ui/Accordion.astro'
-import Card from '../../ui/cards/partials/Card.astro'
-
-// Props
-type Props = {
-	classes?: string
-}
-const { classes } = Astro.props
+import Card from "../../ui/cards/partials/Card.astro";
+import Accordion from "../../ui/Accordion.astro";
 ---
 
-<Section id="FAQ" classes={classes}>
-	<Row>
-		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-pretty">
-				Demystifying <strong>pricing,</strong> common queries resolved
-			</h2>
-			<p class="text-lg leading-relaxed">
-				Curious about our pricing plans? We’re here to help. Below are some of the most frequently
-				asked questions about our pricing options.
-			</p>
-		</Col>
-		<Col span="2" />
-		<Col span="8">
-			<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">
-				<Accordion
-					title="What is included in the free trial?"
-					text="Our free trial gives you full access to all features of our platform for 14 days. You can explore and use all functionalities to see how they fit your business needs, without any cost."
-				/>
-				<Accordion
-					title="Can I change my plan later?"
-					text="Yes, you can upgrade or downgrade your plan at any time from your account settings. The changes will take effect immediately, and any cost adjustments will be prorated."
-				/>
-				<Accordion
-					title="Are there any hidden fees?"
-					text="No, there are no hidden fees. The price you see is the price you pay. We believe in transparent pricing with no surprises."
-				/>
-				<Accordion
-					title="What payment methods do you accept?"
-					text="We accept all major credit cards, including Visa, MasterCard, American Express, and PayPal. For enterprise plans, we also offer invoicing options."
-				/>
-				<Accordion
-					title="Do you offer discounts for annual subscriptions?"
-					text="Yes, we offer a discount for annual subscriptions. By choosing an annual plan, you can save up to 20% compared to the monthly plan."
-				/>
-			</Card>
-		</Col>
-		<Col span="2" />
-	</Row>
-</Section>
+<section class="bg-page px-6 py-20 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-4xl divide-y divide-neutral-700/10">
+    <h2 class="text-2xl font-bold leading-10 tracking-tight text-page-text-color">
+      Resolvemos tus dudas sobre remodelación y financiamiento
+    </h2>
+    <dl class="mt-10 space-y-6 divide-y divide-neutral-700/10">
+      <Accordion 
+        title="¿Qué tipos de proyectos de remodelación realizan?"
+        text="En CREYPASS nos especializamos en remodelación integral de espacios residenciales y comerciales. Realizamos proyectos de cocinas, baños, salas, recámaras, oficinas y espacios completos. Nuestro equipo maneja desde diseño arquitectónico hasta acabados de lujo."
+      />
 
-<style>
-	.page-header {
-		@apply mx-auto max-w-3xl;
-	}
-	.page-header__text {
-		@apply text-lg leading-relaxed;
-	}
-</style>
+      <Accordion 
+        title="¿Cómo funciona el financiamiento directo del 7.9%?"
+        text="Ofrecemos financiamiento directo con una tasa fija del 7.9% anual, sin intermediarios bancarios. Puedes financiar hasta el 100% de tu proyecto con plazos flexibles de 12 a 48 meses. La aprobación es rápida y solo necesitas comprobante de ingresos."
+      />
+
+      <Accordion 
+        title="¿Cuánto cuesta una remodelación integral?"
+        text="El costo varía según el tamaño del espacio y nivel de acabados. Una remodelación básica inicia desde $80,000 MXN, mientras que proyectos premium pueden llegar a $300,000 MXN. Ofrecemos cotizaciones gratuitas personalizadas para cada proyecto."
+      />
+
+      <Accordion 
+        title="¿Qué formas de pago aceptan?"
+        text="Aceptamos pagos en efectivo, transferencias bancarias, tarjetas de crédito y débito. También manejamos pagos diferidos con nuestro sistema de financiamiento directo. Los pagos se realizan por etapas según el avance de la obra."
+      />
+
+      <Accordion 
+        title="¿Ofrecen garantía en sus trabajos?"
+        text="Sí, todos nuestros trabajos incluyen garantía de 2 años en mano de obra y 5 años en instalaciones eléctricas e hidráulicas. Utilizamos materiales de primera calidad y nuestro equipo está certificado en las mejores prácticas de construcción."
+      />
+
+      <Accordion 
+        title="¿Cuánto tiempo toma un proyecto de remodelación?"
+        text="El tiempo depende del alcance del proyecto. Una remodelación de baño toma 2-3 semanas, una cocina 3-4 semanas, y una remodelación integral 6-12 semanas. Siempre entregamos un cronograma detallado antes de iniciar los trabajos."
+      />
+    </dl>
+  </div>
+</section>

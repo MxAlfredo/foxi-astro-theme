@@ -1,0 +1,63 @@
+---
+// Feature Cards grid Section - Simplified version without complex images
+// ------------
+// Description: A grid of cards with feature information in a 2 column layout.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+---
+
+<Section id="features" padding="both" classes="py-12 lg:py-16">
+	<Row>
+		<Col span="12" align="center" classes="mb-6 max-w-3xl mx-auto">
+			<h2 class="text-pretty text-2xl lg:text-3xl">Servicios que <strong>transforman</strong> espacios</h2>
+			<p class="pb-0 text-sm lg:text-base text-neutral-600 dark:text-neutral-400">
+				Remodelación integral con financiamiento directo. Calidad, diseño y facilidades de pago.
+			</p>
+		</Col>
+	</Row>
+	<Row>
+		<Col span="6">
+			<div class="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-6 text-white h-full">
+				<div class="mb-4">
+					<div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
+						<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold mb-2 text-white">Remodelación Integral</h3>
+					<p class="text-primary-100 text-sm opacity-90">Cocinas, baños y espacios completos con diseño personalizado y acabados premium.</p>
+				</div>
+				<a href="/servicios" class="inline-flex items-center text-white hover:text-primary-100 transition-colors">
+					Ver servicios 
+					<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+					</svg>
+				</a>
+			</div>
+		</Col>
+		<Col span="6">
+			<div class="bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-2xl p-6 text-white h-full">
+				<div class="mb-4">
+					<div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
+						<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+							<path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/>
+							<path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-bold mb-2 text-white">Financiamiento 7.9%</h3>
+					<p class="text-neutral-200 text-sm opacity-90">Sin bancos, tasa fija, pagos hasta 60 meses. Aprobación en 48 horas.</p>
+				</div>
+				<a href="/financiamiento" class="inline-flex items-center text-white hover:text-neutral-200 transition-colors">
+					Ver planes
+					<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+					</svg>
+				</a>
+			</div>
+		</Col>
+	</Row>
+</Section>

@@ -16,15 +16,15 @@ import AvatarGroup from '../../ui/AvatarGroup.astro'
 
 // Content
 // - Hero Image
-import heroImage from '../../../assets/hero-01.png'
-// - Avatars
-import user1 from '../../../assets/avatars/avatar-01.webp'
-import user2 from '../../../assets/avatars/avatar-02.webp'
-import user3 from '../../../assets/avatars/avatar-03.webp'
+import heroImage from '../../../assets/hero-remodelacion.jpg'
+// - Avatares
+import user1 from '../../../assets/avatars/avatar-cliente-01.jpg'
+import user2 from '../../../assets/avatars/avatar-cliente-02.jpg'
+import user3 from '../../../assets/avatars/avatar-cliente-03.jpg'
 const avatars = [
-	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
-	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
-	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+	{ image: { src: user1.src, alt: 'Cliente CREYPASS' }, link: '/' },
+	{ image: { src: user2.src, alt: 'Cliente CREYPASS' }, link: '/' },
+	{ image: { src: user3.src, alt: 'Cliente CREYPASS' }, link: '/' }
 ]
 ---
 
@@ -36,10 +36,10 @@ const avatars = [
 				<strong>Tasa 7.9%</strong> financiamiento directo
 				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
 			</ChipNotification>
-			<h1 class="text-primary-500 dark:text-white">Transforma tu <strong class="text-primary-500">espacio</strong> con financiamiento flexible</h1>
+			<h1 class="text-primary-500 dark:text-white text-4xl lg:text-5xl">Transforma tu <strong class="text-primary-500">espacio</strong> con financiamiento flexible</h1>
 
-			<p class="pb-0 text-lg text-neutral-600 dark:text-neutral-300">Remodelación integral con planes de pago accesibles hasta 60 meses</p>
-			<Button size="lg" link="/contact" classes="bg-primary-500 hover:bg-primary-600 border-primary-500 text-white">Cotizar mi proyecto</Button>
+			<p class="pb-0 text-base lg:text-lg text-neutral-600 dark:text-neutral-300">Remodelación integral con planes de pago accesibles hasta 60 meses</p>
+			<Button size="lg" link="https://wa.me/5217671173175?text=Hola%2C%20me%20interesa%20cotizar%20un%20proyecto%20de%20remodelaci%C3%B3n" classes="bg-primary-500 hover:bg-primary-600 border-primary-500 text-white">Cotizar mi proyecto</Button>
 		</Col>
 		<Col span="2" />
 		<Col span="2" />

@@ -39,7 +39,7 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Transformamos espacios con diseño, funcionalidad y financiamiento flexible. Remodelación residencial y comercial con planes de pago accesibles hasta 60 meses.',
 		logo: {
-			src: '/logo.svg',
+			src: '/logo_creypass.svg',
 			alt: 'CREYPASS - Remodelación y Financiamiento',
 			text: 'CREYPASS'
 		}
@@ -87,21 +87,17 @@ export const footerNavigationData: FooterData = {
 			category: 'Contacto',
 			subCategories: [
 				{
-					subCategory: 'Contacto',
-					subCategoryLink: '/contact'
-				},
-				{
 					subCategory: 'Cotizar Proyecto',
-					subCategoryLink: '/contact'
+					subCategoryLink: 'https://wa.me/5217671173175?text=Hola%2C%20me%20interesa%20cotizar%20un%20proyecto%20de%20remodelaci%C3%B3n'
 				},
 				{
-					subCategory: 'Soporte',
-					subCategoryLink: '/contact'
+					subCategory: 'WhatsApp',
+					subCategoryLink: 'https://wa.me/5217671173175'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© CREYPASS 2024. Todos los derechos reservados.'
+		copywriteText: `© CREYPASS ${new Date().getFullYear()}. Todos los derechos reservados.`
 	}
 }

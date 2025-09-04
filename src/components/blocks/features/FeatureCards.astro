@@ -13,58 +13,34 @@ import Card from '../../ui/cards/FeatureCard.astro'
 
 // Content
 // - Cards
-import feature01 from '../../../assets/cards/feature-01.svg'
-import feature02 from '../../../assets/cards/feature-02.svg'
-import feature03 from '../../../assets/cards/feature-03.svg'
-import feature04 from '../../../assets/cards/feature-04.svg'
-import feature05 from '../../../assets/cards/feature-05.svg'
+import feature01 from '../../../assets/cards/remodelacion-imagen.jpg'
+import feature03 from '../../../assets/cards/financiamiento-imagen.jpg'
 ---
 
-<Section id="features">
+<Section id="features" padding="both" classes="py-12 lg:py-16">
 	<Row>
-		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-pretty">Servicios integrales para <strong>transformar</strong> tu espacio</h2>
-			<p class="pb-0 text-lg">
-				Desde remodelación residencial y comercial hasta financiamiento directo. Cada servicio está diseñado
-				para ofrecerte la mejor experiencia con calidad y flexibilidad financiera.
+		<Col span="12" align="center" classes="mb-6 max-w-3xl mx-auto">
+			<h2 class="text-pretty text-2xl lg:text-3xl">Servicios que <strong>transforman</strong> espacios</h2>
+			<p class="pb-0 text-sm lg:text-base text-neutral-600 dark:text-neutral-400">
+				Remodelación integral con financiamiento directo. Calidad, diseño y facilidades de pago.
 			</p>
 		</Col>
 	</Row>
 	<Row>
-		<Col span="4">
+		<Col span="6">
 			<Card
-				title="Remodelación Residencial"
-				subtitle="Transformamos tu hogar con diseño personalizado: cocinas, baños, recámaras y espacios únicos con estilo y funcionalidad."
+				title="Remodelación Integral"
+				subtitle="Cocinas, baños y espacios completos con diseño personalizado y acabados premium."
 				image={feature01}
 				link="/servicios"
 			/>
 		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
+		<Col span="6">
 			<Card
-				title="Remodelación Comercial"
-				subtitle="Espacios comerciales y oficinas diseñados para optimizar productividad y crear experiencias únicas."
-				image={feature02}
-				link="/servicios"
-			/>
-			<Card
-				title="Financiamiento Directo"
-				subtitle="Tasa fija 7.9% anual, pagos hasta 60 meses. Sin bancos, aprobación en 48 horas."
+				title="Financiamiento 7.9%"
+				subtitle="Sin bancos, tasa fija, pagos hasta 60 meses. Aprobación en 48 horas."
 				image={feature03}
 				link="/financiamiento"
-			/>
-		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
-			<Card
-				title="Diseño de Interiores"
-				subtitle="Diseño personalizado moderno, minimalista e industrial que refleja tu personalidad y estilo."
-				image={feature04}
-				link="/servicios"
-			/>
-			<Card
-				title="Asesoría Integral"
-				subtitle="Te acompañamos desde el diseño inicial hasta la entrega final. Experiencia y compromiso garantizado."
-				image={feature05}
-				link="/nosotros"
 			/>
 		</Col>
 	</Row>

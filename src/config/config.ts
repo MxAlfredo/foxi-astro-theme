@@ -26,7 +26,7 @@ export const configData: Config = {
 		'CREYPASS ofrece servicios de remodelación residencial y comercial con financiamiento directo. Transformamos espacios con diseño, calidad y planes de pago flexibles hasta 60 meses.',
 	ogImage: '/og.jpg',
 	logo: {
-		src: '/logo.svg',
+		src: '/logo_creypass.svg',
 		alt: 'CREYPASS logo'
 	},
 	canonical: true,

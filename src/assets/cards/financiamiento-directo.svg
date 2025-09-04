@@ -1,0 +1,53 @@
+<svg width="480" height="600" viewBox="0 0 480 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_financiamiento)">
+    <g filter="url(#filter0_dd_financiamiento)">
+      <rect x="24" y="24" width="432" height="552" rx="24" fill="white"/>
+      
+      <!-- Tarjeta de crédito principal -->
+      <rect x="80" y="160" width="320" height="200" rx="16" fill="#3C3D5E"/>
+      <rect x="80" y="160" width="320" height="60" rx="16" fill="#232340"/>
+      
+      <!-- Chip -->
+      <rect x="120" y="190" width="40" height="30" rx="6" fill="#CFBAAD"/>
+      
+      <!-- Números de tarjeta -->
+      <rect x="120" y="260" width="60" height="8" rx="4" fill="#DCD3D1"/>
+      <rect x="200" y="260" width="60" height="8" rx="4" fill="#DCD3D1"/>
+      <rect x="280" y="260" width="60" height="8" rx="4" fill="#DCD3D1"/>
+      
+      <!-- Nombre -->
+      <rect x="120" y="300" width="120" height="6" rx="3" fill="#CFBAAD"/>
+      
+      <!-- Logo CREYPASS pequeño -->
+      <circle cx="340" cy="320" r="20" fill="#3E3F5F"/>
+      <text x="340" y="325" font-family="Arial" font-size="8" fill="white" text-anchor="middle">C</text>
+      
+      <!-- Indicadores de pago -->
+      <circle cx="150" cy="420" r="8" fill="#CFBAAD"/>
+      <text x="150" y="425" font-family="Arial" font-size="10" fill="#3C3D5E" text-anchor="middle">1</text>
+      
+      <circle cx="200" cy="420" r="8" fill="#DCD3D1"/>
+      <text x="200" y="425" font-family="Arial" font-size="10" fill="#3C3D5E" text-anchor="middle">2</text>
+      
+      <circle cx="250" cy="420" r="8" fill="#DCD3D1"/>
+      <text x="250" y="425" font-family="Arial" font-size="10" fill="#3C3D5E" text-anchor="middle">3</text>
+      
+      <!-- Línea de conexión -->
+      <path d="M150 420L200 420L250 420" stroke="#3E3F5F" stroke-width="2" stroke-dasharray="4,4"/>
+      
+      <!-- Texto 7.9% -->
+      <text x="240" y="480" font-family="Arial" font-size="24" font-weight="bold" fill="#3C3D5E">7.9%</text>
+      <text x="240" y="500" font-family="Arial" font-size="12" fill="#3E3F5F">tasa fija</text>
+    </g>
+  </g>
+  
+  <defs>
+    <filter id="filter0_dd_financiamiento" x="0" y="0" width="480" height="600" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+    </filter>
+    <clipPath id="clip0_financiamiento">
+      <rect width="480" height="600" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>
